@@ -1,0 +1,12 @@
+name: GraviDupeControl
+version: '0.0.1'
+main: org.unfr.graviDupeControl.GraviDupeControl
+api-version: '1.21'
+authors: [ Unfr ]
+description: Allows to control which gravity blocks are allowed to be duped through end portal
+commands:
+  gdcr:
+    description: Reload GraviDupeControl configuration.
+    usage: /<command>
+    permission: gravidupecontrol.reload
+    permission-message: You do not have permission to use this command.
