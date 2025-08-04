@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'org.unfr'
-version = '0.0.1'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
