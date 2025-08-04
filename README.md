@@ -1,5 +1,5 @@
-
 # GraviDupeControl
+
 This plugin allows to restrict which types of gravity-affected blocks are allowed to be duped through end portal.
 
 
@@ -31,10 +31,15 @@ allowed-dupe-blocks:
 - RED_CONCRETE_POWDER  
 - BLACK_CONCRETE_POWDER
 ```
-*commands*
-```
-  gdcr:
-    description: Reload GraviDupeControl configuration.
-    usage: /<command>
-    permission: gravidupecontrol.reload
-```
+
+
+
+| Command | Description                         | Permission              |
+|---------|-------------------------------------|-------------------------|
+| /gdcr    | Reload GraviDupeControl Configuration | `gravidupecontrol.reload` |
+
+
+
+---
+
+This plugin is inspired by [GravityControl](https://modrinth.com/plugin/gravitycontrol) by [e](https://modrinth.com/user/e)
