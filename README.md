@@ -1,5 +1,5 @@
 
-# GravityDupeControl
+# GraviDupeControl
 This plugin allows to restrict which types of gravity-affected blocks are allowed to be duped through end portal.
 
 
