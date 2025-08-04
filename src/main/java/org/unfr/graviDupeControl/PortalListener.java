@@ -1,14 +1,13 @@
 package org.unfr.graviDupeControl;
 
+import java.util.Set;
+
 import org.bukkit.Material;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.FallingBlock;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityPortalEvent;
-
-import java.util.Set;
 
 public final class PortalListener implements Listener {
     private final Set<Material> allowed;
@@ -18,13 +17,10 @@ public final class PortalListener implements Listener {
     }
 
     @EventHandler(ignoreCancelled = true, priority = EventPriority.HIGHEST)
-    public void onEntityPortal(EntityPortalEvent e) {
-        Entity ent = e.getEntity();
-        if (!(ent instanceof FallingBlock fb)) return;
-
-        Material mat = fb.getBlockData().getMaterial();
-        if (!allowed.contains(mat)) {
-            e.setCancelled(true);
+    public void onEntityPortal(EntityPortalEvent event) {
+        if (event.getEntity() instanceof FallingBlock fallingBlock
+                && !allowed.contains(fallingBlock.getBlockData().getMaterial())) {
+            event.setCancelled(true);
         }
     }
 }

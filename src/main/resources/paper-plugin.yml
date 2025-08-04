@@ -1,5 +1,5 @@
 name: GraviDupeControl
-version: '0.0.1'
+version: '${version}'
 main: org.unfr.graviDupeControl.GraviDupeControl
 api-version: '1.21'
 authors: [ Unfr ]
